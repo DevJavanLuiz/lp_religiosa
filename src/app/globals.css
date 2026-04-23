@@ -1,26 +1,117 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Custom color tokens */
+  --color-warm-white: #FCFAF7;
+  --color-light-beige: #F3EBDD;
+  --color-medium-beige: #E6D5BD;
+  --color-dark-beige: #CBB89D;
+  --color-light-gold: #D8BE7A;
+  --color-soft-gold: #E6CF96;
+  --color-text-primary: #3E342A;
+  --color-text-secondary: #6B5C4D;
+  --color-border-soft: #E9DFD0;
+  --color-bg-highlight: #F8F3EB;
+
+  /* Font families */
+  --font-heading: var(--font-cormorant-garamond), "Georgia", serif;
+  --font-body: var(--font-inter), "system-ui", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: #FFFFFF;
+  line-height: 1.7;
+}
+
+/* Heading font */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Selection */
+::selection {
+  background-color: #D8BE7A40;
+  color: #3E342A;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCFAF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBB89D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D8BE7A;
+}
+
+/* Focus visible */
+*:focus-visible {
+  outline: 2px solid #D8BE7A;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Animate on scroll helper */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Gold shimmer animation for accents */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #D8BE7A 0%,
+    #E6CF96 25%,
+    #D8BE7A 50%,
+    #E6CF96 75%,
+    #D8BE7A 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pulse animation for badges */
+@keyframes gentle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 2s ease-in-out infinite;
 }
