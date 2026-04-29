@@ -20,13 +20,13 @@ export function CTAButton({
   href = CHECKOUT_URL,
 }: CTAButtonProps) {
   const baseClasses =
-    'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D8BE7A] cursor-pointer'
+    'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B8903F] cursor-pointer'
 
   const variants = {
     primary:
-      'bg-[#D8BE7A] text-[#3E342A] hover:bg-[#E6CF96] hover:shadow-lg hover:shadow-[#D8BE7A]/20 hover:-translate-y-0.5 active:translate-y-0',
+      'bg-[#B8903F] text-[#2A2118] hover:bg-[#C49D52] hover:shadow-lg hover:shadow-[#B8903F]/20 hover:-translate-y-0.5 active:translate-y-0',
     secondary:
-      'bg-transparent text-[#3E342A] border-2 border-[#D8BE7A] hover:bg-[#D8BE7A]/10 hover:shadow-md',
+      'bg-transparent text-[#2A2118] border-2 border-[#B8903F] hover:bg-[#B8903F]/10 hover:shadow-md',
   }
 
   const sizes = {
@@ -34,12 +34,19 @@ export function CTAButton({
     large: 'px-10 py-4.5 text-lg',
   }
 
+  const classes = cn(baseClasses, variants[variant], sizes[size], className)
+  const isExternal = href.startsWith('http')
+
+  if (isExternal) {
+    return (
+      <a href={href} id={id} className={classes}>
+        {children}
+      </a>
+    )
+  }
+
   return (
-    <Link
-      href={href}
-      id={id}
-      className={cn(baseClasses, variants[variant], sizes[size], className)}
-    >
+    <Link href={href} id={id} className={classes}>
       {children}
     </Link>
   )

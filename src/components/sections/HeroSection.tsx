@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Check } from 'lucide-react'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { EBOOK_TITLE, EBOOK_SUBTITLE } from '@/lib/constants'
 
@@ -6,34 +7,34 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-b from-[#FCFAF7] via-[#F8F3EB] to-[#F3EBDD]"
+      className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-b from-[#F1E7D8] via-[#E8DAC8] to-[#DDCBB4]"
     >
       {/* Decorative elements */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-[#D8BE7A]/5 blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#E6CF96]/8 blur-2xl" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-[#B8903F]/5 blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#C49D52]/8 blur-2xl" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text content */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D8BE7A]/15 border border-[#D8BE7A]/30 text-sm font-medium text-[#3E342A] mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#D8BE7A] animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#B8903F]/15 border border-[#B8903F]/30 text-sm font-medium text-[#2A2118] mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#B8903F] animate-pulse" />
               Ebook Digital · Acesso Imediato
             </span>
 
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-[#3E342A] leading-[1.1] mb-4">
+            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-[#2A2118] leading-[1.1] mb-4">
               {EBOOK_TITLE}
             </h1>
 
-            <p className="text-lg md:text-xl text-[#6B5C4D] font-medium leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-[#4D3F31] font-medium leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
               {EBOOK_SUBTITLE}
             </p>
 
-            <p className="text-base text-[#6B5C4D]/80 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-base text-[#4D3F31]/80 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
               Se você carrega feridas que ninguém vê, se sente presa a dores que
-              não consegue explicar — existe um caminho. Existe cura para o que
+              não consegue explicar, existe um caminho. Existe cura para o que
               você sente.
             </p>
 
@@ -51,23 +52,17 @@ export function HeroSection() {
             </div>
 
             {/* Trust badges */}
-            <div className="flex flex-wrap items-center gap-6 justify-center lg:justify-start text-sm text-[#6B5C4D]">
+            <div className="flex flex-wrap items-center gap-6 justify-center lg:justify-start text-sm text-[#4D3F31]">
               <span className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#D8BE7A]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <Check className="h-5 w-5 text-[#B8903F]" aria-hidden="true" strokeWidth={2.5} />
                 PDF de alta qualidade
               </span>
               <span className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#D8BE7A]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <Check className="h-5 w-5 text-[#B8903F]" aria-hidden="true" strokeWidth={2.5} />
                 Acesso imediato
               </span>
               <span className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#D8BE7A]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <Check className="h-5 w-5 text-[#B8903F]" aria-hidden="true" strokeWidth={2.5} />
                 Base bíblica
               </span>
             </div>
@@ -78,13 +73,13 @@ export function HeroSection() {
             <div className="relative">
               {/* Glow effect */}
               <div
-                className="absolute inset-0 bg-[#D8BE7A]/20 blur-3xl rounded-full scale-110"
+                className="absolute inset-0 bg-[#B8903F]/20 blur-3xl rounded-full scale-110"
                 aria-hidden="true"
               />
               <div className="relative drop-shadow-2xl">
                 <Image
                   src="/images/ebook-cover.png"
-                  alt="Capa do ebook Restauração da Alma — 5 passos espirituais para cura emocional e identidade em Deus"
+                  alt="Capa do ebook Restauração da Alma, 5 passos espirituais para cura emocional e identidade em Deus"
                   width={420}
                   height={560}
                   preload

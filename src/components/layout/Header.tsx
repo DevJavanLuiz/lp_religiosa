@@ -1,9 +1,10 @@
 import Link from 'next/link'
-import { EBOOK_TITLE } from '@/lib/constants'
+import { Cross } from 'lucide-react'
+import { CHECKOUT_URL, EBOOK_TITLE } from '@/lib/constants'
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#E9DFD0]/60">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#C9B89F]/60">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -12,8 +13,8 @@ export function Header() {
             className="flex items-center gap-2 group"
             aria-label="Página inicial"
           >
-            <span className="text-xl text-[#D8BE7A]" aria-hidden="true">✝</span>
-            <span className="font-heading text-lg font-semibold text-[#3E342A] group-hover:text-[#D8BE7A] transition-colors">
+            <Cross className="h-5 w-5 text-[#B8903F]" aria-hidden="true" strokeWidth={2} />
+            <span className="font-heading text-lg font-semibold text-[#2A2118] group-hover:text-[#B8903F] transition-colors">
               {EBOOK_TITLE}
             </span>
           </Link>
@@ -22,25 +23,25 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8" aria-label="Navegação principal">
             <Link
               href="#conteudo"
-              className="text-sm text-[#6B5C4D] hover:text-[#3E342A] transition-colors"
+              className="text-sm text-[#4D3F31] hover:text-[#2A2118] transition-colors"
             >
               Conteúdo
             </Link>
             <Link
               href="#capitulos"
-              className="text-sm text-[#6B5C4D] hover:text-[#3E342A] transition-colors"
+              className="text-sm text-[#4D3F31] hover:text-[#2A2118] transition-colors"
             >
               Capítulos
             </Link>
             <Link
               href="#faq"
-              className="text-sm text-[#6B5C4D] hover:text-[#3E342A] transition-colors"
+              className="text-sm text-[#4D3F31] hover:text-[#2A2118] transition-colors"
             >
               Dúvidas
             </Link>
             <Link
-              href="#comprar"
-              className="inline-flex items-center px-5 py-2 rounded-lg bg-[#D8BE7A] text-[#3E342A] text-sm font-semibold hover:bg-[#E6CF96] transition-all duration-300 hover:shadow-md"
+              href={CHECKOUT_URL}
+              className="inline-flex items-center px-5 py-2 rounded-lg bg-[#B8903F] text-[#2A2118] text-sm font-semibold hover:bg-[#C49D52] transition-all duration-300 hover:shadow-md"
             >
               Adquirir ebook
             </Link>
@@ -48,8 +49,8 @@ export function Header() {
 
           {/* Mobile CTA */}
           <Link
-            href="#comprar"
-            className="md:hidden inline-flex items-center px-4 py-2 rounded-lg bg-[#D8BE7A] text-[#3E342A] text-sm font-semibold hover:bg-[#E6CF96] transition-colors"
+            href={CHECKOUT_URL}
+            className="md:hidden inline-flex items-center px-4 py-2 rounded-lg bg-[#B8903F] text-[#2A2118] text-sm font-semibold hover:bg-[#C49D52] transition-colors"
           >
             Adquirir
           </Link>

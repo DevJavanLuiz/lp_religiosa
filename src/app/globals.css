@@ -2,20 +2,32 @@
 
 @theme inline {
   /* Custom color tokens */
-  --color-warm-white: #FCFAF7;
-  --color-light-beige: #F3EBDD;
-  --color-medium-beige: #E6D5BD;
-  --color-dark-beige: #CBB89D;
-  --color-light-gold: #D8BE7A;
-  --color-soft-gold: #E6CF96;
-  --color-text-primary: #3E342A;
-  --color-text-secondary: #6B5C4D;
-  --color-border-soft: #E9DFD0;
-  --color-bg-highlight: #F8F3EB;
+  --color-warm-white: #F1E7D8;
+  --color-light-beige: #DDCBB4;
+  --color-medium-beige: #C7AE8D;
+  --color-dark-beige: #9F845F;
+  --color-light-gold: #B8903F;
+  --color-soft-gold: #C49D52;
+  --color-text-primary: #2A2118;
+  --color-text-secondary: #4D3F31;
+  --color-border-soft: #C9B89F;
+  --color-bg-highlight: #E8DAC8;
 
   /* Font families */
   --font-heading: var(--font-cormorant-garamond), "Georgia", serif;
   --font-body: var(--font-inter), "system-ui", sans-serif;
+
+  /* Font size tokens increased by 2px */
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.625rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.375rem;
+  --text-5xl: 3.125rem;
+  --text-6xl: 3.875rem;
 }
 
 /* Base styles */
@@ -27,6 +39,7 @@ html {
 
 body {
   font-family: var(--font-body);
+  font-size: 18px;
   color: var(--color-text-primary);
   background-color: #FFFFFF;
   line-height: 1.7;
@@ -39,8 +52,8 @@ body {
 
 /* Selection */
 ::selection {
-  background-color: #D8BE7A40;
-  color: #3E342A;
+  background-color: #B8903F40;
+  color: #2A2118;
 }
 
 /* Smooth scrollbar */
@@ -49,21 +62,21 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FCFAF7;
+  background: #F1E7D8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CBB89D;
+  background: #9F845F;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #D8BE7A;
+  background: #B8903F;
 }
 
 /* Focus visible */
 *:focus-visible {
-  outline: 2px solid #D8BE7A;
+  outline: 2px solid #B8903F;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -93,11 +106,11 @@ body {
 .gold-shimmer {
   background: linear-gradient(
     90deg,
-    #D8BE7A 0%,
-    #E6CF96 25%,
-    #D8BE7A 50%,
-    #E6CF96 75%,
-    #D8BE7A 100%
+    #B8903F 0%,
+    #C49D52 25%,
+    #B8903F 50%,
+    #C49D52 75%,
+    #B8903F 100%
   );
   background-size: 200% auto;
   animation: shimmer 3s linear infinite;

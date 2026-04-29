@@ -1,6 +1,7 @@
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { CTAButton } from '@/components/ui/CTAButton'
+import { EbookIcon } from '@/components/ui/EbookIcon'
 import { benefits } from '@/data/ebook'
 
 export function BenefitsSection() {
@@ -16,18 +17,18 @@ export function BenefitsSection() {
         {benefits.map((benefit) => (
           <article
             key={benefit.id}
-            className="group bg-white rounded-2xl p-7 border border-[#E9DFD0] hover:border-[#D8BE7A]/40 hover:shadow-lg hover:shadow-[#D8BE7A]/5 transition-all duration-300"
+            className="group bg-white rounded-2xl p-7 border border-[#C9B89F] hover:border-[#B8903F]/40 hover:shadow-lg hover:shadow-[#B8903F]/5 transition-all duration-300"
           >
             <span
-              className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#D8BE7A]/10 text-2xl mb-5 group-hover:bg-[#D8BE7A]/20 group-hover:scale-110 transition-all duration-300"
+              className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#B8903F]/10 mb-5 text-[#B8903F] group-hover:bg-[#B8903F]/20 group-hover:scale-110 transition-all duration-300"
               aria-hidden="true"
             >
-              {benefit.icon}
+              <EbookIcon name={benefit.icon} className="h-6 w-6" strokeWidth={2} />
             </span>
-            <h3 className="font-heading text-lg font-semibold text-[#3E342A] mb-3 leading-snug">
+            <h3 className="font-heading text-lg font-semibold text-[#2A2118] mb-3 leading-snug">
               {benefit.title}
             </h3>
-            <p className="text-[#6B5C4D] text-[15px] leading-relaxed">
+            <p className="text-[#4D3F31] text-[17px] leading-relaxed">
               {benefit.description}
             </p>
           </article>

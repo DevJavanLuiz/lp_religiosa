@@ -6,22 +6,22 @@ export const SITE_DESCRIPTION =
 export const EBOOK_TITLE = 'Restauração da Alma'
 export const EBOOK_SUBTITLE =
   '5 Passos Espirituais para Curar Emoções, Vencer Traumas e Restaurar sua Identidade em Deus'
-export const EBOOK_PRICE = 39.9
-export const EBOOK_ORIGINAL_PRICE = 97.0
+export const EBOOK_PRICE = 17.70
 export const EBOOK_CURRENCY = 'BRL'
 
-export const CHECKOUT_URL = '#comprar'
+export const CHECKOUT_URL =
+  process.env.NEXT_PUBLIC_HOTMART_CHECKOUT_URL || '#comprar'
 
 export const COLORS = {
   white: '#FFFFFF',
-  warmWhite: '#FCFAF7',
-  lightBeige: '#F3EBDD',
-  mediumBeige: '#E6D5BD',
-  darkBeige: '#CBB89D',
-  lightGold: '#D8BE7A',
-  softGold: '#E6CF96',
-  textPrimary: '#3E342A',
-  textSecondary: '#6B5C4D',
-  borderSoft: '#E9DFD0',
-  bgHighlight: '#F8F3EB',
+  warmWhite: '#F1E7D8',
+  lightBeige: '#DDCBB4',
+  mediumBeige: '#C7AE8D',
+  darkBeige: '#9F845F',
+  lightGold: '#B8903F',
+  softGold: '#C49D52',
+  textPrimary: '#2A2118',
+  textSecondary: '#4D3F31',
+  borderSoft: '#C9B89F',
+  bgHighlight: '#E8DAC8',
 } as const

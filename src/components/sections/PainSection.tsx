@@ -1,3 +1,4 @@
+import { Check } from 'lucide-react'
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { painPoints } from '@/data/ebook'
@@ -15,25 +16,12 @@ export function PainSection() {
         {painPoints.map((point) => (
           <div
             key={point.id}
-            className="group flex items-start gap-4 p-5 rounded-xl bg-[#FCFAF7] border border-[#E9DFD0] hover:border-[#D8BE7A]/40 hover:shadow-md transition-all duration-300"
+            className="group flex items-start gap-4 p-5 rounded-xl bg-[#F1E7D8] border border-[#C9B89F] hover:border-[#B8903F]/40 hover:shadow-md transition-all duration-300"
           >
-            <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#D8BE7A]/15 flex items-center justify-center group-hover:bg-[#D8BE7A]/25 transition-colors">
-              <svg
-                className="w-3.5 h-3.5 text-[#D8BE7A]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
+            <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#B8903F]/15 flex items-center justify-center group-hover:bg-[#B8903F]/25 transition-colors">
+              <Check className="h-3.5 w-3.5 text-[#B8903F]" aria-hidden="true" strokeWidth={2.5} />
             </span>
-            <p className="text-[#3E342A] leading-relaxed text-[15px]">
+            <p className="text-[#2A2118] leading-relaxed text-[17px]">
               {point.text}
             </p>
           </div>
@@ -41,7 +29,7 @@ export function PainSection() {
       </div>
 
       <div className="mt-12 max-w-2xl mx-auto text-center">
-        <p className="text-[#6B5C4D] italic text-lg leading-relaxed">
+        <p className="text-[#4D3F31] italic text-lg leading-relaxed">
           &ldquo;Essas dores não são o fim da sua história. São o ponto de
           partida para uma jornada de restauração profunda com Deus.&rdquo;
         </p>

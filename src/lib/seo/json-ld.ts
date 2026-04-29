@@ -4,10 +4,14 @@ import {
   EBOOK_TITLE,
   EBOOK_SUBTITLE,
   EBOOK_PRICE,
-  EBOOK_ORIGINAL_PRICE,
   EBOOK_CURRENCY,
+  CHECKOUT_URL,
 } from '@/lib/constants'
 import { faqItems } from '@/data/faq'
+
+const offerUrl = CHECKOUT_URL.startsWith('http')
+  ? CHECKOUT_URL
+  : `${SITE_URL}/${CHECKOUT_URL}`
 
 export function getWebsiteJsonLd() {
   return {
@@ -42,7 +46,7 @@ export function getBookJsonLd() {
       price: EBOOK_PRICE.toFixed(2),
       priceCurrency: EBOOK_CURRENCY,
       availability: 'https://schema.org/InStock',
-      url: SITE_URL,
+      url: offerUrl,
     },
   }
 }
@@ -66,7 +70,7 @@ export function getProductJsonLd() {
       priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
         .toISOString()
         .split('T')[0],
-      url: SITE_URL,
+      url: offerUrl,
     },
   }
 }

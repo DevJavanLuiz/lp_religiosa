@@ -7,7 +7,7 @@ export const chapters: Chapter[] = [
     subtitle: 'A revelação do amor de Deus',
     description:
       'Descubra como a compreensão da paternidade de Deus pode curar feridas profundas de rejeição, abandono e carência afetiva. Um convite para se reconectar com o amor que restaura.',
-    icon: '🕊️',
+    icon: 'church',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const chapters: Chapter[] = [
     subtitle: 'Liberte-se do que aprisiona sua alma',
     description:
       'Entenda o processo bíblico do perdão e como ele pode desatar nós emocionais que você carrega há anos. Perdoar não é esquecer — é se libertar.',
-    icon: '🔓',
+    icon: 'lock-open',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const chapters: Chapter[] = [
     subtitle: 'A cura que vem de dentro para fora',
     description:
       'Com base bíblica e sensibilidade emocional, este capítulo aborda como enfrentar traumas que marcaram sua história e encontrar restauração verdadeira.',
-    icon: '💛',
+    icon: 'heart',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ export const chapters: Chapter[] = [
     subtitle: 'Encontrando consolo e esperança',
     description:
       'Luto não é fraqueza — é amor. Aprenda a atravessar a dor da perda com apoio espiritual, sem negar o que sente, mas encontrando forças em Deus.',
-    icon: '🌿',
+    icon: 'leaf',
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ export const chapters: Chapter[] = [
     subtitle: 'Quebrando padrões que se repetem',
     description:
       'Identifique padrões emocionais e comportamentais herdados de gerações anteriores e descubra como interromper ciclos que limitam sua vida espiritual.',
-    icon: '🔗',
+    icon: 'link',
   },
 ]
 
@@ -49,42 +49,42 @@ export const benefits: Benefit[] = [
     title: 'Compreender feridas emocionais à luz da Palavra',
     description:
       'Olhe para sua dor com os olhos de Deus. Compreenda o que aconteceu com você a partir de uma perspectiva bíblica e acolhedora.',
-    icon: '📖',
+    icon: 'book-open',
   },
   {
     id: 2,
     title: 'Lidar com a dor da rejeição e da ausência afetiva',
     description:
       'Encontre caminhos para processar a rejeição e o vazio deixado por relações que feriram sua identidade.',
-    icon: '🤍',
+    icon: 'heart',
   },
   {
     id: 3,
     title: 'O poder do perdão no processo de libertação interior',
     description:
       'Descubra como o perdão, quando compreendido biblicamente, se torna uma ferramenta poderosa de libertação e paz.',
-    icon: '✨',
+    icon: 'sparkles',
   },
   {
     id: 4,
     title: 'Enfrentar traumas e perdas com base bíblica',
     description:
       'Receba orientação sensível, profunda e com embasamento nas Escrituras para enfrentar as maiores dores da sua vida.',
-    icon: '🛡️',
+    icon: 'shield',
   },
   {
     id: 5,
     title: 'Identificar padrões familiares que precisam ser quebrados',
     description:
       'Reconheça ciclos de comportamento e emoção que se repetem em sua família e entenda como Deus deseja romper essas cadeias.',
-    icon: '🔑',
+    icon: 'key-round',
   },
   {
     id: 6,
     title: 'Fortalecer sua identidade em Deus',
     description:
       'Redescubra quem você é aos olhos do Pai. Restaure sua identidade, seu valor e seu propósito através da verdade que liberta.',
-    icon: '👑',
+    icon: 'crown',
   },
 ]
 

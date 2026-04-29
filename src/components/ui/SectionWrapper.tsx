@@ -9,9 +9,9 @@ interface SectionWrapperProps {
 
 const bgMap = {
   white: 'bg-white',
-  warmWhite: 'bg-[#FCFAF7]',
-  lightBeige: 'bg-[#F3EBDD]',
-  highlight: 'bg-[#F8F3EB]',
+  warmWhite: 'bg-[#F1E7D8]',
+  lightBeige: 'bg-[#DDCBB4]',
+  highlight: 'bg-[#E8DAC8]',
 }
 
 export function SectionWrapper({

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ChevronDown } from 'lucide-react'
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { faqItems } from '@/data/faq'
@@ -22,33 +23,24 @@ export function FAQSection() {
           return (
             <div
               key={item.id}
-              className="rounded-xl border border-[#E9DFD0] overflow-hidden transition-all duration-300 hover:border-[#D8BE7A]/40"
+              className="rounded-xl border border-[#C9B89F] overflow-hidden transition-all duration-300 hover:border-[#B8903F]/40"
             >
               <button
                 onClick={() => setOpenId(isOpen ? null : item.id)}
-                className="w-full flex items-center justify-between gap-4 p-5 text-left bg-[#FCFAF7] hover:bg-[#F8F3EB] transition-colors cursor-pointer"
+                className="w-full flex items-center justify-between gap-4 p-5 text-left bg-[#F1E7D8] hover:bg-[#E8DAC8] transition-colors cursor-pointer"
                 aria-expanded={isOpen}
                 aria-controls={`faq-answer-${item.id}`}
               >
-                <span className="text-[#3E342A] font-medium text-[15px] leading-snug">
+                <span className="text-[#2A2118] font-medium text-[17px] leading-snug">
                   {item.question}
                 </span>
-                <svg
-                  className={`w-5 h-5 text-[#D8BE7A] flex-shrink-0 transition-transform duration-300 ${
+                <ChevronDown
+                  className={`h-5 w-5 text-[#B8903F] flex-shrink-0 transition-transform duration-300 ${
                     isOpen ? 'rotate-180' : ''
                   }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                   strokeWidth={2}
                   aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
+                />
               </button>
 
               <div
@@ -58,7 +50,7 @@ export function FAQSection() {
                   isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="px-5 pb-5 pt-2 text-[#6B5C4D] text-[15px] leading-relaxed">
+                <div className="px-5 pb-5 pt-2 text-[#4D3F31] text-[17px] leading-relaxed">
                   {item.answer}
                 </div>
               </div>

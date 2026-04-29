@@ -3,44 +3,44 @@ import type { FAQItem } from '@/types'
 export const faqItems: FAQItem[] = [
   {
     id: 1,
-    question: 'Como recebo o ebook?',
+    question: 'Como finalizo a compra?',
     answer:
-      'Após a confirmação do pagamento, você receberá imediatamente um link de acesso por e-mail. O ebook está em formato PDF, pronto para leitura.',
+      'Ao clicar no botão de compra, você será redirecionado para o checkout seguro da Hotmart. Lá você confere os dados do produto, escolhe a forma de pagamento e conclui o pedido.',
   },
   {
     id: 2,
-    question: 'O acesso é imediato?',
+    question: 'Quais formas de pagamento a Hotmart aceita?',
     answer:
-      'Sim! Assim que o pagamento for processado, o acesso é liberado automaticamente. Você pode começar a ler em poucos minutos.',
+      'A Hotmart pode oferecer opções como cartão de crédito, Pix, boleto e outras formas disponíveis no checkout. As opções aparecem automaticamente na página de pagamento.',
   },
   {
     id: 3,
-    question: 'Posso ler no celular?',
+    question: 'Quando recebo o ebook?',
     answer:
-      'Sim, o ebook pode ser lido em qualquer dispositivo: celular, tablet, computador ou notebook. Basta ter um leitor de PDF instalado.',
+      'Depois da confirmação do pagamento pela Hotmart, o acesso ao ebook digital é enviado para o e-mail usado na compra. Em pagamentos instantâneos, a liberação costuma acontecer rapidamente.',
   },
   {
     id: 4,
-    question: 'Esse material é apenas para quem passou por traumas?',
+    question: 'Onde acesso o material depois da compra?',
     answer:
-      'Não. O ebook é para qualquer pessoa que deseja aprofundar sua jornada de cura emocional e espiritual. Ele aborda temas como perdão, identidade, paternidade de Deus e restauração da alma — temas universais para toda pessoa que busca crescimento interior.',
+      'Você receberá as instruções de acesso por e-mail. O conteúdo fica disponível pela área de compras da Hotmart, usando o mesmo e-mail informado no pagamento.',
   },
   {
     id: 5,
-    question: 'O conteúdo é baseado em princípios bíblicos?',
+    question: 'O ebook é físico ou digital?',
     answer:
-      'Sim, todo o conteúdo é fundamentado nas Escrituras Sagradas. A abordagem une profundidade bíblica com sensibilidade emocional, de forma respeitosa e acolhedora.',
+      'O Restauração da Alma é um ebook digital em PDF. Não há envio físico, então você pode ler pelo celular, tablet, computador ou notebook.',
   },
   {
     id: 6,
-    question: 'É um livro físico ou digital?',
+    question: 'É seguro comprar pela Hotmart?',
     answer:
-      'O Restauração da Alma é um ebook digital em formato PDF. Isso significa que você pode acessá-lo de qualquer lugar, a qualquer momento, sem esperar por entrega.',
+      'Sim. A compra é processada pelo ambiente de pagamento da Hotmart, uma plataforma especializada em produtos digitais. A página de checkout cuida dos dados de pagamento e da liberação do acesso.',
   },
   {
     id: 7,
-    question: 'Posso presentear alguém com este ebook?',
+    question: 'E se eu tiver problema para acessar?',
     answer:
-      'Com certeza! Após a compra, você pode compartilhar o acesso com quem desejar. É um presente significativo para alguém que está em busca de cura e restauração.',
+      'Se tiver qualquer dificuldade com pagamento, e-mail de acesso ou download, você pode usar os canais de suporte indicados pela Hotmart na confirmação da compra.',
   },
 ]
