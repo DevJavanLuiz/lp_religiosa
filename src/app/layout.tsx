@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Cormorant_Garamond } from 'next/font/google'
+import Script from 'next/script'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getAllJsonLd } from '@/lib/seo/json-ld'
@@ -116,6 +117,10 @@ export default function RootLayout({
         ))}
       </head>
       <body className="min-h-full flex flex-col bg-white">
+        <Script
+          src="https://static.hotmart.com/checkout/widget.min.js"
+          strategy="afterInteractive"
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://restauracaodaalma.com.br'
+export const SITE_URL = 'https://restauracaodaalma.warrantconnect.com'
 export const SITE_NAME = 'Restauração da Alma'
 export const SITE_DESCRIPTION =
   'Ebook cristão sobre cura emocional, restauração da alma e identidade em Deus. 5 passos espirituais para curar emoções, vencer traumas e restaurar sua identidade.'
@@ -10,7 +10,8 @@ export const EBOOK_PRICE = 17.70
 export const EBOOK_CURRENCY = 'BRL'
 
 export const CHECKOUT_URL =
-  process.env.NEXT_PUBLIC_HOTMART_CHECKOUT_URL || '#comprar'
+  process.env.NEXT_PUBLIC_HOTMART_CHECKOUT_URL ||
+  'https://pay.hotmart.com/I105707940W?checkoutMode=2'
 
 export const COLORS = {
   white: '#FFFFFF',

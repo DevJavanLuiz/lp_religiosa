@@ -41,7 +41,7 @@ export function Header() {
             </Link>
             <Link
               href={CHECKOUT_URL}
-              className="inline-flex items-center px-5 py-2 rounded-lg bg-[#B8903F] text-[#2A2118] text-sm font-semibold hover:bg-[#C49D52] transition-all duration-300 hover:shadow-md"
+              className="hotmart-fb hotmart__button-checkout inline-flex items-center px-5 py-2 rounded-lg bg-[#B8903F] text-[#2A2118] text-sm font-semibold hover:bg-[#C49D52] transition-all duration-300 hover:shadow-md"
             >
               Adquirir ebook
             </Link>
@@ -50,7 +50,7 @@ export function Header() {
           {/* Mobile CTA */}
           <Link
             href={CHECKOUT_URL}
-            className="md:hidden inline-flex items-center px-4 py-2 rounded-lg bg-[#B8903F] text-[#2A2118] text-sm font-semibold hover:bg-[#C49D52] transition-colors"
+            className="hotmart-fb hotmart__button-checkout md:hidden inline-flex items-center px-4 py-2 rounded-lg bg-[#B8903F] text-[#2A2118] text-sm font-semibold hover:bg-[#C49D52] transition-colors"
           >
             Adquirir
           </Link>

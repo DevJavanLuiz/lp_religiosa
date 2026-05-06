@@ -34,8 +34,15 @@ export function CTAButton({
     large: 'px-10 py-4.5 text-lg',
   }
 
-  const classes = cn(baseClasses, variants[variant], sizes[size], className)
   const isExternal = href.startsWith('http')
+  const isHotmartCheckout = href.includes('pay.hotmart.com')
+  const classes = cn(
+    baseClasses,
+    variants[variant],
+    sizes[size],
+    isHotmartCheckout && 'hotmart-fb hotmart__button-checkout',
+    className
+  )
 
   if (isExternal) {
     return (

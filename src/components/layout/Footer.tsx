@@ -55,7 +55,7 @@ export function Footer() {
               </Link>
               <Link
                 href={CHECKOUT_URL}
-                className="text-sm text-[#B8903F] hover:text-[#C49D52] transition-colors font-medium"
+                className="hotmart-fb hotmart__button-checkout text-sm text-[#B8903F] hover:text-[#C49D52] transition-colors font-medium"
               >
                 Adquirir o ebook
               </Link>
